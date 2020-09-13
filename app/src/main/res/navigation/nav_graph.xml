@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_graph"
+            app:startDestination="@id/imageFragment"
+>
+
+    <fragment
+            android:id="@+id/imageFragment"
+            android:name="com.ffzs.imageapp.ui.images.ImageFragment"
+            android:label="Images"
+            tools:layout="@layout/image_fragment" >
+        <action
+                android:id="@+id/action_imageFragment_to_imageDetailFragment"
+                app:destination="@id/imageDetailFragment" />
+
+    </fragment>
+    <fragment
+            android:id="@+id/imageDetailFragment"
+            android:name="com.ffzs.imageapp.ui.imagesDetail.ImageDetailFragment"
+            android:label="Image Detail"
+            tools:layout="@layout/image_detail_fragment" />
+</navigation>
